@@ -1,16 +1,112 @@
-# React + Vite
+# 💰 Financeiro App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicativo web de controle financeiro pessoal, focado em **simplicidade, velocidade e flexibilidade** para registrar receitas e despesas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## React Compiler
+- ✅ Lançamento rápido de receitas e despesas
+- ✅ Débito / Crédito
+- ✅ Data prevista de pagamento/recebimento
+- ✅ Data de pagamento real
+- ✅ Edição e exclusão de lançamentos
+- ✅ Filtros por categoria e tipo
+- ✅ Dashboard com resumo financeiro
+- ✅ Organização por contas
+- ✅ Interface simples e intuitiva
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+src/
+ ├── components/
+ │   ├── Dashboard.jsx
+ │   ├── Lancamentos.jsx
+ │   ├── Contas.jsx
+ │   └── Relatorios.jsx
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+## ▶️ Como rodar o projeto
+
+### 1. Clonar o repositório
+
+```
+git clone https://github.com/SEU-USUARIO/financeiro-app.git
+```
+
+### 2. Entrar na pasta
+
+```
+cd financeiro-app
+```
+
+### 3. Instalar dependências
+
+```
+npm install
+```
+
+### 4. Rodar o projeto
+
+```
+npm run dev
+```
+
+O app abrirá em:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🎯 Objetivo do projeto
+
+Criar um aplicativo financeiro:
+
+- rápido
+- fácil de usar
+- flexível
+- completo
+- com experiência profissional
+
+Focado em controle financeiro pessoal moderno.
+
+---
+
+## 📌 Próximas melhorias
+
+- Persistência em banco de dados
+- Login de usuário
+- Gráficos financeiros
+- Exportação de relatórios
+- Versão mobile
+
+---
+
+## 👨‍💻 Autor
+
+Anna Nascimento Tavares
+
+---
+
+## 📄 Licença
+
+Projeto para uso pessoal e educacional.
