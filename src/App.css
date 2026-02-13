@@ -1,0 +1,51 @@
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.painel {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabela {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #374151;
+}
+
+.receita {
+  color: #22c55e;
+}
+
+.despesa {
+  color: #ef4444;
+}
+
+.aberto {
+  background: #facc15;
+}
+
+.pago {
+  background: #22c55e;
+}
+
+.excluir {
+  background: #ef4444;
+}
