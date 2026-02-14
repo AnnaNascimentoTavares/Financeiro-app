@@ -1,13 +1,18 @@
 import { useState } from "react";
 
-function Contas() {
-  const [contas, setContas] = useState([]);
+function Contas({ contas, setContas }) {
+
   const [nome, setNome] = useState("");
 
   function adicionarConta() {
     if (!nome.trim()) return;
 
-    setContas([...contas, { id: Date.now(), nome }]);
+    const nova = {
+      id: Date.now(),
+      nome
+    };
+
+    setContas([...contas, nova]);
     setNome("");
   }
 
@@ -17,7 +22,8 @@ function Contas() {
 
   return (
     <div>
-      <h2>Contas</h2>
+
+      <h1>Contas</h1>
 
       <input
         placeholder="Nome do banco"
@@ -37,6 +43,7 @@ function Contas() {
           </button>
         </div>
       ))}
+
     </div>
   );
 }

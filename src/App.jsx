@@ -32,11 +32,12 @@ function App() {
         <Lancamentos
           lancamentos={lancamentos}
           setLancamentos={setLancamentos}
-        />
+        return (
+  <div className="container"></div>
       )}
 
       {pagina === "contas" && <Contas />}
-    </div>
+    
   );
 }
 

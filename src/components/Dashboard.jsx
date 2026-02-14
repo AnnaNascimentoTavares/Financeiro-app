@@ -1,35 +1,37 @@
 function Dashboard({ lancamentos }) {
-  const totalEntradas = lancamentos
-    .filter(l => l.tipo === "entrada")
-    .reduce((acc, l) => acc + Number(l.valor), 0);
+  const entradas = lancamentos
+    .filter((l) => l.tipo === "entrada")
+    .reduce((total, l) => total + Number(l.valor), 0);
 
-  const totalSaidas = lancamentos
-    .filter(l => l.tipo === "saida")
-    .reduce((acc, l) => acc + Number(l.valor), 0);
+  const saidas = lancamentos
+    .filter((l) => l.tipo === "saida")
+    .reduce((total, l) => total + Number(l.valor), 0);
 
-  const saldo = totalEntradas - totalSaidas;
+  const saldo = entradas - saidas;
 
   return (
     <div>
-      <h1>Dashboard</h1>
+      <h2>Dashboard</h2>
 
-      <div className="cards">
+      <div className="card">
+        <h3>Entradas</h3>
+        <p className="valor-positivo">
+          R$ {entradas.toFixed(2)}
+        </p>
+      </div>
 
-        <div className="card entrada">
-          <h3>Entradas</h3>
-          <p>R$ {totalEntradas.toFixed(2)}</p>
-        </div>
+      <div className="card">
+        <h3>Saídas</h3>
+        <p className="valor-negativo">
+          R$ {saidas.toFixed(2)}
+        </p>
+      </div>
 
-        <div className="card saida">
-          <h3>Saídas</h3>
-          <p>R$ {totalSaidas.toFixed(2)}</p>
-        </div>
-
-        <div className="card saldo">
-          <h3>Saldo</h3>
-          <p>R$ {saldo.toFixed(2)}</p>
-        </div>
-
+      <div className="card">
+        <h3>Saldo</h3>
+        <p className={saldo >= 0 ? "valor-positivo" : "valor-negativo"}>
+          R$ {saldo.toFixed(2)}
+        </p>
       </div>
     </div>
   );
