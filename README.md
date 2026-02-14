@@ -15,6 +15,7 @@ Aplicativo web de controle financeiro pessoal, focado em **simplicidade, velocid
 - ✅ Dashboard com resumo financeiro
 - ✅ Organização por contas
 - ✅ Interface simples e intuitiva
+- ✅ Edição de categoria
 
 ---
 
