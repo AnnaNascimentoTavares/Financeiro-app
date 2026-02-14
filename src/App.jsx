@@ -5,10 +5,12 @@ function App() {
   const [lancamentos, setLancamentos] = useState([]);
 
   return (
-    <Dashboard
-      lancamentos={lancamentos}
-      setLancamentos={setLancamentos}
-    />
+    <div>
+      <Dashboard
+        lancamentos={lancamentos}
+        setLancamentos={setLancamentos}
+      />
+    </div>
   );
 }
 
