@@ -1,17 +1,17 @@
 function Dashboard({ lancamentos }) {
   const entradas = lancamentos
-    .filter(l => l.tipo === "entrada")
-    .reduce((acc, l) => acc + Number(l.valor), 0);
+    .filter((item) => item.tipo === "entrada")
+    .reduce((acc, item) => acc + item.valor, 0);
 
   const saidas = lancamentos
-    .filter(l => l.tipo === "saida")
-    .reduce((acc, l) => acc + Number(l.valor), 0);
+    .filter((item) => item.tipo === "saida")
+    .reduce((acc, item) => acc + item.valor, 0);
 
   const saldo = entradas - saidas;
 
   return (
-    <div className="dashboard-container">
-      <h2 className="dashboard-title">Dashboard Financeiro</h2>
+    <div className="container">
+      <h1>Dashboard</h1>
 
       <div className="cards">
         <div className="card">
